@@ -10,11 +10,15 @@
 <body>
     <div class="user-input">
         <form>
-            <label for="term">Enter term:</label> 
-            <input type="number" name="term" required>
+            <label for="term">Loan Term:</label> 
+            <input class="term" type="number" name="term" required>
 
-            <label for="value">Enter amount:</label>
-            <input class="value" type="number" name="value" required>
+            <label for="amount">Loan Amount:</label>
+            <input class="amount" type="number" name="amount" required>
+
+            <label for="rate">Interest Rate:</label>
+            <input class="rate" type="number" name="rate" required>
+
             <div class="btn"><a class="btn-link" href="#">Calculate</a></div>
         </form>
     </div>
@@ -22,10 +26,12 @@
         <table>
             <thead>
                 <tr>
-                    <td>Year</td>
-                    <td>Orginal Value</td>
-                    <td>% Depreciated</td>
-                    <td>Current Value</td>
+                    <td>Payment Number</td>
+                    <td>Payment</td>
+                    <td>Principal</td>
+                    <td>Interest</td>
+                    <td>Total Interest</td>
+                    <td>Balance</td>
                 </tr>
             </thead>
             <tbody class="data-output">
