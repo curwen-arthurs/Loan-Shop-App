@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="user-input">
+        <form>
+            <label for="term">Enter term:</label> 
+            <input type="number" name="term" required>
+
+            <label for="value">Enter amount:</label>
+            <input class="value" type="number" name="value" required>
+            <div class="btn"><a class="btn-link" href="#">Calculate</a></div>
+        </form>
+    </div>
+    <div class = "container" >
+        <table>
+            <thead>
+                <tr>
+                    <td>Year</td>
+                    <td>Orginal Value</td>
+                    <td>% Depreciated</td>
+                    <td>Current Value</td>
+                </tr>
+            </thead>
+            <tbody class="data-output">
+                <!-- populated from the javascript file -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
