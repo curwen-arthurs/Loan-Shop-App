@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="home_page.html">
+                        <img src="img/Loan Shop3.png" alt="badge logo">
+                    </a>
+                </div>
+                <div class="col">
+                    <nav>
+                        <ul class="row">
+                            <li class="col nav_link"><a href="home_page.html">Home</a></li>
+                            <li class="col nav_link"><a href="app_page.html">The App</a></li>
+                            <li class="col nav_link"><a href="about_page.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN SECTION -->
+    <div class="container">
+        <div class="row loan_details">
+            <div class="user-input">
+                <h2>LOAN CALCULATOR</h2>
+                <form>
+                    <label for="term">Loan Term:</label> 
+                    <input class="term" type="number" name="term" value=5 required>
+        
+                    <label for="amount">Loan Amount:</label>
+                    <input class="amount" type="number" name="amount" value=15000 required>
+        
+                    <label for="rate">Interest Rate:</label>
+                    <input class="rate" type="number" name="rate" value=3 required>
+        
+                    <div class="btn"><a class="btn-link" href="#">Calculate</a></div>
+                </form>
+            </div>
+            <div class="summary">
+                <h2>YOUR MONTHLY PAYMENTS</h2>
+                <p class="monthly_payment">$0.00</p>
+                <div class="row summary_style">
+                    <div class="summary_labels">
+                        <p>Total Principal</p>
+                        <p>Total Interest</p>
+                        <p>Total Cost</p>
+                    </div>
+                    <div class="summary_values">                        
+                        <p class="principal"></p>
+                        <p class="interest"></p>
+                        <p class="total"></p>   
+                    </div> 
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- TABLE SECTION -->
+    <section>
+        <div class="container" >
+            <table>
+                <thead>
+                    <tr>
+                        <td>Payment Number</td>
+                        <td>Payment</td>
+                        <td>Principal</td>
+                        <td>Interest</td>
+                        <td>Total Interest</td>
+                        <td>Balance</td>
+                    </tr>
+                </thead>
+                <tbody class="data-output">
+                    <!-- populated from the javascript file -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container" >
+            <div class="row footer_style">
+                <div class="copyright">© 2022 Curwen Arthurs</div>
+                <img src="img/Loan Shop3.png" alt="">
+                <div class="contacts row">
+                    <li><a href=""><i class="devicon-linkedin-plain contact_icon"></i></a></li>
+                    <li><a href=""><i class="devicon-github-original contact_icon"></i></a></li>
+                    <li><a href=""><i class="devicon-twitter-original contact_icon"></i></a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

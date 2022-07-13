@@ -10,6 +10,10 @@ function displayTable(){
     let monthlyInterestRate = interestRate / 12;
 
     let paymentAmount = (loanAmount * monthlyInterestRate) / (1 - Math.pow((1 + monthlyInterestRate), (-1 * term)));
+    document.querySelector(".monthly_payment").innerHTML = `$${paymentAmount.toFixed(2)}`;
+    document.querySelector(".principal").innerHTML = `$${loanAmount}`;
+    document.querySelector(".interest").innerHTML = `$${(paymentAmount * term - loanAmount).toFixed(2)}`;
+    document.querySelector(".total").innerHTML = `$${(paymentAmount * term).toFixed(2)}`;
 
     let principal = 0;
     let monthlyInterest = 0;
